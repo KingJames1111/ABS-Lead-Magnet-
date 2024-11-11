@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2024-01-09",
+  "components": {
+    "Process": {
+      "header": {
+        "title": "Our Proven Process",
+        "subtitle": "110X Growth",
+        "description": "From Concept to Conversion: Your Journey to Success"
+      },
+      "background": {
+        "baseColor": "#1C0B29",
+        "gradient": "from-[#2A0E4F] to-[#1C0B29]",
+        "dots": {
+          "count": 50,
+          "seed": 42
+        }
+      },
+      "layout": {
+        "spacing": "py-32",
+        "container": "container px-4 mx-auto",
+        "grid": "flex flex-col gap-12"
+      }
+    }
+  },
+  "styles": {
+    "colors": {
+      "primary": "hsl(var(--flame-orange))",
+      "secondary": "hsl(var(--royal-purple-light))",
+      "accent": "hsl(var(--electric-green))"
+    },
+    "typography": {
+      "heading": "font-orbitron",
+      "body": "font-inter"
+    }
+  },
+  "animations": {
+    "dots": {
+      "duration": 4,
+      "ease": "easeInOut"
+    },
+    "content": {
+      "duration": 0.6,
+      "ease": "easeOut"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+/* High Contrast Mode Optimizations */
+@media (forced-colors: active) {
+  :root {
+    --royal-purple-dark: CanvasText;
+    --royal-purple-light: CanvasText;
+    --flame-orange: Highlight;
+    --flame-red: Mark;
+    --electric-green: ActiveText;
+    --bg-dark: Canvas;
+    --text-muted: GrayText;
+    --text-light: CanvasText;
+  }
+
+  /* Ensure buttons are visible */
+  button {
+    border: 2px solid currentColor;
+  }
+
+  /* Maintain focus indicators */
+  :focus {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Large Text Mode */
+@media (prefers-contrast: more) {
+  :root {
+    --min-text-contrast: 7;
+  }
+  
+  body {
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+  }
+}

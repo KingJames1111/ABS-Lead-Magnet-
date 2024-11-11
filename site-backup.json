@@ -1,0 +1,188 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2024-01-09",
+  "name": "ABS Studios Website",
+  "components": {
+    "sections": {
+      "hero": {
+        "pattern": "HERO_PATTERN",
+        "background": {
+          "baseColor": "#1C0B29",
+          "gradient": "from-[#2A0E4F] to-[#1C0B29]",
+          "effects": {
+            "dots": {
+              "count": 50,
+              "seed": 42,
+              "animation": {
+                "duration": 4,
+                "ease": "easeInOut"
+              }
+            },
+            "glows": {
+              "positions": [
+                {
+                  "position": "top-0 left-1/4",
+                  "color": "hsl(var(--flame-orange)/0.15)"
+                },
+                {
+                  "position": "bottom-0 right-1/4",
+                  "color": "hsl(var(--flame-red)/0.15)"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "process": {
+        "header": {
+          "title": "Our Proven Process",
+          "subtitle": "110X Growth",
+          "description": "From Concept to Conversion: Your Journey to Success"
+        },
+        "steps": [
+          {
+            "number": "01",
+            "heading": "DISCOVER",
+            "title": "Define Your Voice",
+            "subtitle": "Unleash Your Brand's True Power",
+            "color": "hsl(var(--flame-orange))"
+          },
+          {
+            "number": "02",
+            "heading": "IMAGINE",
+            "title": "Build Your Brand's Big Brain",
+            "subtitle": "ABS's Neural Codex System - Your AI-powered network",
+            "color": "hsl(var(--electric-green))"
+          },
+          {
+            "number": "03",
+            "heading": "AMPLIFY",
+            "title": "Create & Multiply",
+            "subtitle": "Scale Your Impact",
+            "color": "hsl(var(--flame-red))"
+          },
+          {
+            "number": "04",
+            "heading": "OPTIMIZE",
+            "title": "Measure & Refine",
+            "subtitle": "Optimize for Growth",
+            "color": "hsl(var(--electric-green))"
+          }
+        ]
+      }
+    },
+    "design": {
+      "colors": {
+        "primary": {
+          "royalPurpleDark": "hsl(270 50% 20%)",
+          "royalPurpleLight": "hsl(270 50% 40%)",
+          "flameOrange": "hsl(25 100% 50%)",
+          "flameRed": "hsl(0 100% 50%)",
+          "electricGreen": "hsl(120 100% 50%)"
+        },
+        "background": {
+          "dark": "hsl(270 50% 5%)",
+          "light": "hsl(0 0% 100%)"
+        },
+        "text": {
+          "light": "hsl(0 0% 100%)",
+          "muted": "hsl(0 0% 70%)"
+        }
+      },
+      "typography": {
+        "fonts": {
+          "heading": "Orbitron",
+          "body": "Inter"
+        },
+        "weights": {
+          "normal": "400",
+          "medium": "500",
+          "semibold": "600",
+          "bold": "700"
+        }
+      },
+      "spacing": {
+        "section": "py-32",
+        "container": "px-4 md:px-8",
+        "card": "p-8",
+        "button": "px-8 py-6"
+      }
+    },
+    "patterns": {
+      "gestalt": {
+        "proximity": {
+          "spacing": {
+            "related": "0.5rem",
+            "groups": "2rem"
+          }
+        },
+        "similarity": {
+          "colors": "inherit from design-tokens.ts",
+          "typography": "inherit from typography.ts"
+        },
+        "continuity": {
+          "layout": "linear progression",
+          "animation": "smooth transitions"
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "required": [
+      "@radix-ui/react-accordion",
+      "@radix-ui/react-alert-dialog",
+      "@radix-ui/react-aspect-ratio",
+      "@radix-ui/react-avatar",
+      "@radix-ui/react-dialog",
+      "@radix-ui/react-dropdown-menu",
+      "@radix-ui/react-label",
+      "@radix-ui/react-navigation-menu",
+      "@radix-ui/react-slot",
+      "class-variance-authority",
+      "clsx",
+      "framer-motion",
+      "lucide-react",
+      "next",
+      "next-themes",
+      "react",
+      "react-dom",
+      "tailwind-merge",
+      "tailwindcss-animate"
+    ]
+  },
+  "files": {
+    "components": [
+      "sections/hero",
+      "sections/process",
+      "sections/faq",
+      "sections/testimonials",
+      "sections/cta"
+    ],
+    "lib": [
+      "design-system",
+      "utils",
+      "core"
+    ],
+    "styles": [
+      "globals.css",
+      "typography.css",
+      "theme.css"
+    ]
+  },
+  "restore": {
+    "instructions": [
+      "1. Copy all files from backup to project directory",
+      "2. Install dependencies from package.json",
+      "3. Run npm run dev to start development server",
+      "4. Verify all sections are rendering correctly",
+      "5. Check animations and interactions are working"
+    ],
+    "verificationPoints": [
+      "Background effects and floating dots",
+      "Color gradients and transitions",
+      "Typography hierarchy and spacing",
+      "Component animations and hover states",
+      "Responsive layout and breakpoints"
+    ]
+  }
+}
